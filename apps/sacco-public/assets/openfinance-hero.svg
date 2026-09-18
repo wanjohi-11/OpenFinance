@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">OpenFinance cooperative finance illustration</title>
+<desc id="d">Abstract violet, cyan and amber illustration representing savings, community and finance.</desc>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4c1d95"/><stop offset=".58" stop-color="#6d28d9"/><stop offset="1" stop-color="#0891b2"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity=".08"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<circle cx="1390" cy="170" r="360" fill="#fff" opacity=".06"/>
+<circle cx="1220" cy="820" r="420" fill="#fff" opacity=".05"/>
+<circle cx="220" cy="850" r="300" fill="#f59e0b" opacity=".09"/>
+<g transform="translate(850 180)">
+  <rect width="560" height="620" rx="54" fill="url(#card)" stroke="#fff" stroke-opacity=".16"/>
+  <rect x="58" y="70" width="180" height="150" rx="30" fill="#fff" opacity=".15"/>
+  <circle cx="148" cy="144" r="54" fill="#f59e0b" opacity=".94"/>
+  <path d="M123 145h50M148 120v50" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+  <rect x="278" y="78" width="220" height="30" rx="15" fill="#fff" opacity=".64"/>
+  <rect x="278" y="130" width="162" height="22" rx="11" fill="#fff" opacity=".28"/>
+  <rect x="278" y="174" width="196" height="22" rx="11" fill="#fff" opacity=".20"/>
+  <path d="M74 430l82-72 82 40 94-112 98 62 72-90" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" opacity=".78"/>
+  <circle cx="156" cy="358" r="13" fill="#f59e0b"/><circle cx="332" cy="286" r="13" fill="#f59e0b"/><circle cx="502" cy="258" r="13" fill="#f59e0b"/>
+  <rect x="68" y="510" width="424" height="44" rx="22" fill="#fff" opacity=".11"/>
+</g>
+<g transform="translate(170 210)">
+  <rect width="500" height="405" rx="46" fill="#171121" opacity=".42"/>
+  <text x="55" y="105" fill="#f4eaff" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="4">OPENFINANCE</text>
+  <text x="55" y="185" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="68" font-weight="850">Pamoja.</text>
+  <text x="55" y="255" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="68" font-weight="850">Wazi.</text>
+  <text x="55" y="325" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="68" font-weight="850">Rahisi.</text>
+  <rect x="55" y="352" width="170" height="12" rx="6" fill="#f59e0b"/><rect x="245" y="352" width="90" height="12" rx="6" fill="#fff" opacity=".32"/>
+</g>
+</svg>
