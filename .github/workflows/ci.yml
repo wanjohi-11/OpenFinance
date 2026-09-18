@@ -1,0 +1,42 @@
+name: OpenFinance CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          coverage: none
+
+      - name: PHP syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          find apps -type f -name '*.php' -print0 | xargs -0 -n1 php -l
+
+      - name: JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find apps -type f -name '*.js' -print0)
+
+      - name: Secret-pattern guard
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -RInE '(sk_live_|rk_live_|AIza[0-9A-Za-z_-]{20,}|BEGIN (RSA|OPENSSH|EC|PRIVATE) KEY)' .             --exclude-dir=.git
