@@ -1,0 +1,9 @@
+[
+  {
+    "reference": "OF-DEMO-001",
+    "name": "Amina Demo",
+    "email": "demo@example.com",
+    "status": "Approved for demo",
+    "created_at": "2026-09-01T09:00:00+03:00"
+  }
+]
